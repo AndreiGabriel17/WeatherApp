@@ -27,9 +27,6 @@ const getCities = () => {
                 const option = document.createElement("option");
                 option.value = city.id;
                 option.text = city.name;
-                if (city.id === 683506) {
-                    option.setAttribute("selected", true);
-                }
                 select.appendChild(option);
             });
             console.log('Success:', data);
@@ -65,9 +62,9 @@ const getWeather = (cityId) => {
 getCities();
 
 select.addEventListener("change", function (e) {
-    if (document.getElementById("first-h1")) {
-        let firstH1 = document.getElementById("first-h1");
-        firstH1.remove();
+    if (document.getElementById("first-option")) {
+        let firstOption = document.getElementById("first-option");
+        firstOption.remove();
     }
     const cityId = e.target.value;
     getWeather(cityId);
