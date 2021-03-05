@@ -1,0 +1,14 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    background-color: #1d1942;
+    margin: 10rem;
+    color: white;
+}
+
+.city-weather{
+    margin: 5rem;
+    text-align: center;
+}
